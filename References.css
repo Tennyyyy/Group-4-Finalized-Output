@@ -1,0 +1,19 @@
+.reference-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .reference-section img {
+    width: 300px; /* Adjust width as needed */
+    margin-bottom: 20px;
+  }
+  
+  .reference-section p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .reference-section a {
+    color: blue;
+    text-decoration: underline;
+  }
