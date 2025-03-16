@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -76,7 +75,6 @@ header {
 }
 
 .welcome-section {
-   
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -91,6 +89,8 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
+    /* Ensure it starts hidden */
+    display: none; /* Added for fadeIn() */
     animation: fadeInUp 1s ease-in-out;
 }
 
@@ -158,6 +158,7 @@ header {
     transform: scale(1.1);
 }
 
+/* Gallery Overlay - Initially hidden */
 .gallery-overlay {
     position: absolute;
     top: 0;
@@ -169,12 +170,12 @@ header {
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    opacity: 0;
+    opacity: 0; /* Start hidden */
     transition: opacity 0.5s ease-in-out;
 }
 
 .gallery-item:hover .gallery-overlay {
-    opacity: 1;
+    opacity: 1; /* Fade in on hover */
 }
 
 .quote-section {
@@ -183,6 +184,8 @@ header {
     padding: 5px;
     text-align: center;
     font-style: italic;
+    /* Ensure quote section starts hidden for fadeIn */
+    display: none; /* Added for fadeIn() */
 }
 
 .quote i {
@@ -198,3 +201,4 @@ footer {
     padding: 20px 0;
     font-size: 0.9em;
 }
+
